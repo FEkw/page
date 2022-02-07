@@ -1,0 +1,88 @@
+.method-section {
+    padding-top: 20px;
+    padding-bottom: 17px;
+    color: #000;
+    background-color: #F7F7F7;
+    font-family: 'Roboto', sans-serif;
+}
+.method-section .container {
+    overflow: hidden;
+    position: relative;
+}
+.method-section .container h5 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.method-section .container .feature-swiper {
+    width: 100%;
+    overflow: hidden;
+}
+.method-section .container .item {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.method-section .container .item img {
+    height: 58px;
+    width: 45px;
+}
+.method-section .container .item .description {
+    padding-left: 25px;
+    /* text-align: center; */
+}
+.method-section .container .item .description p {
+    font-size: 13px;
+}
+.method-section .container .item .description p:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.method-section .container .item .description p:nth-child(2) {
+    margin-bottom: 0;
+}
+
+/* custom pagination */
+.method-section .container .feature-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.method-section .container .feature-pagination .swiper-pagination-bullet-active {
+    background-color: #327854 !important;
+}
+/* end */
+
+/* custom pagination spidejs */
+.method-section .container .splide-method .splide__pagination {
+    position: static !important;
+    margin-top: 30px;
+}
+.method-section .container .splide-method .splide__pagination .is-active {
+    background-color: #327854;
+    opacity: 100;
+}
+/* end */
+
+@media (min-width: 576px) {
+    /* bagian feature */
+    .method-section .container .feature-swiper {
+        overflow: none;
+    }
+    .method-section .container .item {
+        width: 250px;
+        height: 90px;
+
+        flex-direction: row;
+    }
+    .method-section .container .item img {
+        width: 60px;
+        height: 100%;
+    }
+    .method-section .container .item .description {
+        padding-left: 5px;
+    }
+    .method-section .container .item .description p:nth-child(1) {
+        margin-bottom: 14px;
+    }
+    /* end */
+}
